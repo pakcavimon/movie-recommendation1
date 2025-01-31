@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="register.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>สมัครสมาชิก</h2>
+        <form id="registerForm">
+            <input type="text" name="username" placeholder="ชื่อผู้ใช้งาน" required>
+            <input type="email" name="email" placeholder="อีเมล" required>
+            <input type="password" name="password" placeholder="รหัสผ่าน" required>
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+        <a href="login.html">กลับไปหน้าล็อกอิน</a>
+    </div>
+
+    <script>
+        // ดักจับเหตุการณ์เมื่อผู้ใช้ส่งฟอร์ม
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // ป้องกันการส่งฟอร์มแบบปกติ
+            alert('สมัครสมาชิกสำเร็จ! กำลังกลับไปยังหน้าล็อกอิน...');
+            window.location.href = 'login.html'; // เปลี่ยนหน้าไปยัง login.html
+        });
+    </script>
+</body>
+</html>

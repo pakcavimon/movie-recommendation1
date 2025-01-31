@@ -1,0 +1,18 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "register.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "git": "^0.1.5",
+    "node.js": "^0.0.1-security",
+    "nodemon": "^3.1.9"
+  }
+}
